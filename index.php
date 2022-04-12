@@ -97,7 +97,7 @@ foreach($row as $row):
 ?>
 
 <script  src="js/app.js"></script>
-
+<script type="module"  src="js/filelist.js"></script>
 </div>
 </section>
 
