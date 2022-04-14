@@ -4,10 +4,15 @@ const icon = document.querySelectorAll("i");
 const socialBar = document.getElementById("social_icons_list");
 const h3 = document.querySelectorAll("h3");
 
+//var categoryList = document.getElementById("news-grid-2").children;
+
+
 var imageFiles = '/images/';
+//console.log(categoryList)
 
 
-console.log(imageFiles);
+
+
 
 
 const lazyLoad = (target)=>{

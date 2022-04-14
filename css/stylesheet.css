@@ -1,13 +1,66 @@
 
-body{
-    margin: 0;
+
+
+:root{
+
+
+
+
+
+    --bg-light-main: #f5f5f5;
+    --accent-color-main: #0d50d5;
+   
+    --black: #050515;
+    --section-padding: 2em;
+    --beige: #e5e5e5;
+    --transparent: #000000b7;
+    --purple: #710dd5;
+    
+    
+    
+    }
+
+    ul li {
+        list-style: none;
+        padding-right: 1em;
+        
+    }
+
+    
+div[data-=Space]{
+  
+    color: var(--purple);
+  }
+
+  div[data-=Finance]{
+     
+      color: var(--accent-color-main);  }
+  
+
+    .bg-black{
+
+        background-color: var(--black);
+    }
+.bg-accent{
+    background-color: var(--accent-color-main);
+}
+
+.cat-filter{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+}
+
+
+body,html{
+    margin: 0 auto;
     font-family: 'SF Pro Display' !important;
-    background-color: #ffffff!important ;
-    color: black;
+    background-color:  #f5f5f5 !important ;
+    color:#201E1F;
 }
 
 p{
-    color: black;
+    color: #201E1F;
     
 }
 
@@ -28,17 +81,70 @@ a{
 
 .news-grid{
     display: grid;
-    grid-template-columns: repeat(4, minmax(300px,1fr))  ;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr))  ;
    grid-template-rows: repeat(auto-fit, minmax(300px,1fr)) ;
   grid-gap: 10px;
+  max-width: 100%;
+  overflow-wrap: normal;
     
 }
 
-.news-grid > *.container-fluid{
+.news-grid2{
+display: grid;
+grid-template-columns: repeat(auto-fit , minmax(500px,1fr));
+
+grid-template-rows: repeat(auto-fit, minmax(300px,1fr)) ;
+grid-gap: 10px;
+
+}
+@media screen and (max-width: 575px) {
+    .news-grid,.news-grid2{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    #item1{
+        display: block;
+     
+    }
+
+    #item1 .text-wrapper,   #full-item1 .text-wrapper {
+        background-color: rgba(0, 0, 0, 0.644);
+        padding: 4em !important;
+        height: auto;
+        
+      }
+
+      #item1>.text-wrapper> .row p, #full-item1>.text-wrapper> .row p{
+       display: none;
+    }
+
+    ul {
+        display: block;
+    }
+    
+}
+
+.text-wrapper{
+    overflow: hidden;
+    display: block;
+
+}
+
+.news-grid > *.news-item{
 
  
     border: solid rgba(0, 0, 0, 0.308) thin ;
-  
+  background-color: #f3f3f3;
+}
+
+.news-grid2 > *.news-item{
+
+ 
+    border: solid rgba(0, 0, 0, 0.308) thin ;
+  background-color: #f3f3f3;
+
 }
 
 #item1 .text-wrapper > .row p{
@@ -48,7 +154,7 @@ a{
 #item1 .text-wrapper {
  
 
-background-color: rgba(0, 0, 0, 0.644);
+background-color: rgba(0, 0, 0, 0.744);
 
 
 padding: 15em;
@@ -61,15 +167,36 @@ padding: 15em;
    background-image:  url('/PapaRebuild/images/futurecity.jpg');
     background-attachment: fixed;
     color: whitesmoke;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.35) !important;
 }
+
+#full-item1{
+
+    
+background-color: #0000009f;
+ 
+    background-attachment: fixed;
+    color: whitesmoke;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.35) !important;
+    
+}
+
+
+
+
+#full-item1 .text-wrapper > .row p{
+    color: #f5f5f5;
+}
+
 
 #item1>.row> h1.text-dark{
     color: white;
 }
 
-#item2{
-    grid-area: 4/4/4/4;
+#item2 {
+    grid-area: 3/3/4/4;
 }
+
 
 .translatex{
  
@@ -89,11 +216,14 @@ img{
 .wrapper{
     display: block;
     padding: 2em;
+    margin: 0;
+
 }
 
 .news-item{
     padding-top: 1em;
     padding-bottom: 1em;
+   width: auto;
 }
 
 .news-item > .row{
@@ -124,6 +254,17 @@ img{
  
 }
 
+section{
+    
+    width: 100%;
+}
+
+.section-header, .section-footer{
+padding:1.5em;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
 
 
 .hero-text h1{
@@ -152,6 +293,7 @@ img{
     background-color: rgb(201, 201, 201);
     padding: .5em;
  height: 660px;
+ box-shadow: 0 1rem 3rem rgba(0,0,0,.55) !important;
 
    
 
@@ -258,6 +400,34 @@ i{
     background-color: #f5f5f5;
 }
 
+a button{
+    background-color: var(--accent-color-main);
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    padding-right: 10px;
+    padding-top: .25em;
+    margin-bottom: 0px;
+    padding-bottom: .25em;
+    padding-left: 10px;
+    text-transform: capitalize;
+    transition: all .25s ease-in-out;
+  }
+
+  a button:hover{
+      background-color: var(--purple);
+      transform: scale(1.05);
+  }
 
 
 
+
+
+.about-me{
+   
+    width: 100%;
+}
