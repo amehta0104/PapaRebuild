@@ -29,7 +29,7 @@
             <a class="nav-link" aria-current="page" href="blog.php">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">About Me</a>
+            <a class="nav-link" aria-current="page" href="aboutme.php">About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.php">Services</a>

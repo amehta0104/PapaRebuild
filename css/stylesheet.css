@@ -123,6 +123,17 @@ grid-gap: 10px;
     ul {
         display: block;
     }
+
+    .profile-hero{
+     display: block;
+        padding: 1em;
+        min-width: 100%;
+       
+        overflow: hidden;
+        height: 100% !important;
+        margin: 0 auto;
+        
+        }
     
 }
 
@@ -207,7 +218,8 @@ background-color: #0000009f;
 
 
 img{
-    height: 300px;
+    max-width: 100%;
+
     opacity: 0;
    
     transition: all .5s ease-in-out;
@@ -278,14 +290,7 @@ margin-bottom: 10px;
     color: whitesmoke;
 }
 
-.post-grid{
 
-    display: grid;
-    grid-template-columns: 20% auto 20%;
-    grid-template-rows: auto auto auto 10%;
-    
-   
-}
 
 .article-img{
 
@@ -430,4 +435,228 @@ a button{
 .about-me{
    
     width: 100%;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+  
+   
+    padding: 1em;
+  
+  
+
+    position: relative;
+    overflow: hidden;
+    
+    z-index:0 
+    
+   
+}
+
+
+
+.post-card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  scale: 1.3;
+    filter: blur(30px);
+    filter: saturate(20px);
+    z-index: -1;
+   
+   
+}
+
+.post-card{
+   
+    padding: 1em ;
+
+
+    background-color: #12181b59;
+  
+  
+
+    margin-right: .5em;
+    box-shadow: 0 2px 5px var(--black) ;
+    border-radius: .5em;
+    position: relative;
+    overflow: hidden;
+    
+
+
+    
+   
+
+   
+}
+
+.post-box{
+    flex: 0 0 95%;
+}
+
+
+.post-grid{
+
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto auto auto 10%;
+    
+   
+}
+
+.post-grid2{
+
+    display: grid;
+    grid-template-columns:   auto auto  ;
+    grid-template-rows: 20% auto  5% ;
+
+    gap: 1em;
+    padding: 1em ;
+
+
+    background-color: #ffffff;
+  
+  
+
+    margin-right: .5em;
+    box-shadow: 0 2px 5px var(--black) ;
+    border-radius: .5em;
+    position: relative;
+    overflow: hidden;
+    
+    
+   
+}
+
+.post-box-cat{
+    grid-area: 3/3/4/4;
+}
+
+.post-box-link{
+
+    grid-area: 3/2/4/3;
+}
+
+.post-box-title{
+grid-area: 1/3/2/4;
+}
+.post-box-img{
+
+    grid-area: 1/2/3/3;
+    display: flex;
+    flex: 1 1 50px;
+}
+
+.post-box-content{
+
+    grid-area: 2/3/3/4;
+}
+.gg{
+
+height: auto;
+overflow: hidden;
+
+}
+
+.profile-hero{
+display: flex;
+padding: 1em;
+align-items: center;
+justify-content: space-evenly;
+overflow: hidden;
+
+flex-wrap: wrap-reverse;
+
+background-image: url('../images/futurecity.jpg');
+position: relative;
+}
+.profile-hero2{
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: 100vh;
+    flex-wrap: wrap;
+    
+    }
+    
+
+.slider{
+    overflow: hidden;
+
+    padding: 2em;
+    
+}
+
+.slider img{
+    flex: 0 0 35%;
+   transform: scale(1.1) translateX(-00px);
+    max-width: 35%;
+      filter: contrast(.9);
+      filter: brightness(1.4);
+    filter: opacity(0.7);
+    margin-top: -5px;
+    object-fit: cover;
+    
+   
+    
+  
+      
+     
+}
+
+.profile-desc {
+
+
+   flex: 0 0 50%;
+
+   flex-wrap: wrap;
+  
+}
+
+.profile-img{
+    flex: 0 0 50%;
+    
+    flex-wrap: wrap;
+}
+
+.text-profile-wrapper{
+   
+}
+
+.text-profile-wrapper h2 {
+    max-width: 25ch;
+}
+
+.text-profile-wrapper p{
+    max-width: 60ch;
+}
+
+.row{
+    margin: 0 !important;
+   
+}
+
+
+
+.container-fluid >.profile-hero::before {
+
+    content: '';
+    position: absolute;
+    background-image: inherit;
+    width: 150%;
+    height: 150%;
+  scale: 1.3;
+    filter: blur(20px);
+    filter: saturate(20px);
+    z-index: 0;
+   
+   
+}
+
+.col-lg-6{
+    z-index: 5;
 }
