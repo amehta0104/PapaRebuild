@@ -35,7 +35,8 @@ $result4 = mysqli_query($conn, $sql4);
 
 <?php include('header.php') ?>
 
-
+<!-- Test services
+<div class="container">
    <div class="slider">
        
         <?php while($row = mysqli_fetch_assoc($result)): ?>
@@ -134,11 +135,11 @@ $result4 = mysqli_query($conn, $sql4);
     
     
     
+
     
     
     
     <?PHP endwhile; 
-
 
 mysqli_free_result($result);
 mysqli_close($conn);?>
@@ -150,10 +151,36 @@ mysqli_close($conn);?>
 </div>
 
 
+</div>
+-->
+
+<!--Real services begins -->
+
+<section class="wrapper">
+
+<div class="container">
+
+<h2>services</h2>
+
+<div class="row g-5">
+<div class="col">1 </div>
+<div class="col">2</div>
+<div class="col">3</div>
+
+</div>
+<div class="row g-5">
+
+<div class="col">4 </div>
+<div class="col">5 </div>
+<div class="col">6 </div>
+
+</div>
+
+</div>
 
 
 
-
+</section>
     
 
 

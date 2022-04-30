@@ -493,7 +493,7 @@ a button{
 }
 
 .post-box{
-    flex: 0 0 95%;
+    flex: 0 0 35%;
 }
 
 
@@ -593,8 +593,8 @@ position: relative;
 
 .slider img{
     flex: 0 0 35%;
-   transform: scale(1.1) translateX(-00px);
-    max-width: 35%;
+   transform: scale(1.0) translateX(-00px);
+ 
       filter: contrast(.9);
       filter: brightness(1.4);
     filter: opacity(0.7);

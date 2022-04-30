@@ -81,7 +81,7 @@
 <h3>Relevant Experience</h3>
 </div>
 
-<div class="row row-cols-3 g-5">
+<div class="row row-cols-1 g-5">
 
 <div class="container">
 <div class="row">

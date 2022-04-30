@@ -68,7 +68,7 @@ $check_guid = intval( substr($row2['guid'],-3) );
 
 
 		<?php if($row): ?>
-
+            <?php echo $row2['guid']?>
             <?php if($check_guid == 0):?>
             <div class="article-img bg-black"> <img src="<?php echo $row2['guid']?>" alt=""></div>
            

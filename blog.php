@@ -157,6 +157,8 @@ $assign_grid_count = 1;
 
 </section>
 
+
+
 <section class="next"></section>
 
 <script src="js/app.js"></script>
