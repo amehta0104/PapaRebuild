@@ -21,7 +21,7 @@ if(isset($_GET['id'])){
     $id = mysqli_real_escape_string($conn, $_GET['id']);   
 
     // make sql
-    $sql = "SELECT ID, post_title, guid, post_content FROM `amw_posts`
+    $sql = "SELECT ID, post_title, 'guid', post_content FROM `amw_posts`
      WHERE ID = '$id';";
 
      $sql2 = "SELECT post_parent, guid FROM `amw_posts`
@@ -38,7 +38,7 @@ if(isset($_GET['id'])){
     mysqli_close($conn);
 
 }
-
+ 
 ?>
 
 

@@ -24,7 +24,7 @@ mysqli_close($conn);
 echo count($row);
 
 $assign_grid_count = 1;
-
+json_encode($row)
 
 ?>
 
